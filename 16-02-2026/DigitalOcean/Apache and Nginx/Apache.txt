@@ -1,0 +1,37 @@
+apache is a popular web server software - free and open source
+
+apache is a Software you install on that server (DigitalOcean, AWS, Azure)
+
+so the flow is: 
+You can:
+
+Create AWS EC2 instance
+Install Apache
+Host website
+
+OR
+
+Create DigitalOcean Droplet
+Install Apache
+Host website
+
+-----------------
+Apache works anywhere you have a server.
+It is not limited to DigitalOcean.
+
+Application server:
+
+| App Server   | Language   | Typical Use                         |
+| ------------ | ---------- | ----------------------------------- |
+| **Gunicorn** | Python     | Python WSGI server (Flask, Django)  |
+| **uWSGI**    | Python     | Works with Nginx for Python apps    |
+
+Dynamic app hosting → Gunicorn, Node.js
+Fast static content → Nginx, Caddy
+Load balancing → HAProxy, Traefik
+Lightweight servers → Lighttpd, OpenLiteSpeed
+
+
+also we can use both apache and nginx as a load balncer
+apache = 1995 (old syntax)
+nginx = 2004 (best-modern)(static content very fast)
