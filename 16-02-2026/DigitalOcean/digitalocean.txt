@@ -1,0 +1,42 @@
+What is DigitalOcean?
+
+DigitalOcean is a cloud provider company. It is NOT a single server.
+
+DigitalOcean provides cloud infrastructure services such as: - Virtual
+servers - Storage - Networking - Databases - Kubernetes - Load balancers
+
+What is a Droplet?
+
+When you create a server on DigitalOcean, it is called a “Droplet”.
+
+A Droplet is a Virtual Private Server (VPS). You can think of it like
+your own computer running in the cloud.
+
+With a Droplet, you can: - Install Ubuntu or another Linux OS - Install
+Docker - Install Nginx or Apache - Deploy your project - Connect using
+SSH
+
+Can you host your project on DigitalOcean?
+Yes.
+
+You can deploy: 
+- Django applications 
+- Node.js applications 
+- React frontends 
+- FastAPI applications 
+- Docker containers 
+- Full-stack applications
+
+Basic Deployment Flow:
+
+1.  Create a Droplet
+2.  SSH into the Droplet
+3.  Install required software (Docker/Nginx/etc.)
+4.  Upload your project
+5.  Run the application
+6.  Point your domain to the Droplet IP
+
+Simple Definition:
+
+DigitalOcean is a cloud platform where you can rent virtual servers
+(Droplets) to host your applications.
