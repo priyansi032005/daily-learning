@@ -82,3 +82,13 @@ Kubernetes ensures:
 - Automatic restart if any pod crashes
 - Load balancing traffic to multiple pods
 - Scaling up/down based on CPU/memory
+
+
+components of kubernetes:
+| Component  | What it is                                         |
+| ---------- | -------------------------------------------------- |
+| Cluster    | The whole Kubernetes environment (many servers)    |
+| Node       | A server in the cluster                            |
+| Pod        | Smallest deployable unit (1+ containers)           |
+| Deployment | Desired state of pods (how many replicas, updates) |
+| Service    | Exposes pods to each other or the outside world    |
