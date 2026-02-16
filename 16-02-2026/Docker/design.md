@@ -1,0 +1,1 @@
+i am learning how to use docker for django app with postgresql server

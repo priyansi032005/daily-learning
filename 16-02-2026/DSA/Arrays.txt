@@ -1,0 +1,9 @@
+strivers na 
+1. largest element
+2. second smallest and seconed largest ele
+3. if array is sorted or not
+
+
+apna college sheet (leetcode problem no): 
+169. Majority Element (max repeated element)
+2965. Repeat and Missing value
