@@ -34,3 +34,5 @@ If not → fetch from PostgreSQL
 Yes, Redis and PostgreSQL are commonly used together.
 PostgreSQL stores important data.
 Redis makes the app faster.
+
+in verum.com use this cred via ENV in Dockefile, so that it will using viz container

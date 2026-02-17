@@ -34,4 +34,19 @@ Lightweight servers → Lighttpd, OpenLiteSpeed
 
 also we can use both apache and nginx as a load balncer
 apache = 1995 (old syntax)
-nginx = 2004 (best-modern)(static content very fast)
+nginx = 2004 (best-modern)(static content very fast)(documentation best, paid courses available)
+
+
+NGINX:-
+
+pronounce as engine-x
+it can do load balancing, http caching and reverse proxy
+
+
+When someone opens your website:
+Browser sends request
+Nginx receives it
+Nginx sends back website files
+OR
+Nginx forwards the request to your backend app (Django, Node, etc.)
+
