@@ -1,0 +1,38 @@
+Main database → stores permanent data
+Used for:-
+Users
+Orders
+Products
+Transactions
+Important records
+Data is stored on disk (safe & reliable).
+
+
+Redis: Support database → stores temporary or fast-access data
+Used for:-
+
+Caching
+Sessions
+OTP codes
+Rate limiting
+Background jobs
+Real-time features
+Data is stored in RAM (very fast).
+
+User → Backend
+        ↓
+     Check Redis (cache)
+        ↓
+If found → return fast
+If not → fetch from PostgreSQL
+          ↓
+       Save to Redis
+          ↓
+       Return response
+
+
+Yes, Redis and PostgreSQL are commonly used together.
+PostgreSQL stores important data.
+Redis makes the app faster.
+
+in verum.com use this cred via ENV in Dockefile, so that it will using viz container

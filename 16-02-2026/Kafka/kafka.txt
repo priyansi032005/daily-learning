@@ -1,0 +1,30 @@
+Instead of apps talking directly,
+they send messages through Kafka.
+
+Kafka stores the message safely,
+and other services consume it.
+
+User places order
+        ↓
+ Order Service (Producer)
+        ↓
+        Kafka
+        ↓
+ ┌──────────────┬──────────────┬──────────────┐
+ Payment Service Inventory Service Email Service
+   (Consumer)        (Consumer)      (Consumer)
+
+
+Each service consumes the same event independently.
+
+No direct coupling.
+
+
+Think of Kafka like:
+A Post Office
+Producer = Person sending package
+Kafka = Post Office storing & distributing
+Consumer = Person receiving package
+
+
+Kafka is a distributed message pipeline that allows multiple services to communicate reliably and at large scale.

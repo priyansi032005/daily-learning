@@ -1,0 +1,94 @@
+Kubernetes (K8s) is an open-source container orchestration platform.
+
+It helps you:
+
+Deploy containers at scale
+Automatically manage, scale, and heal applications
+Handle networking, storage, and load balancing for containers
+Ensure high availability
+
+Kubernetes makes it easy to run containerized apps reliably in production.
+
+How Kubernetes Works (Step by Step)
+
+1️⃣ You package your app into a container (Docker, etc.)
+2️⃣ You define desired state in Kubernetes manifests (YAML files)
+Example: “I want 3 replicas of my web app running”
+3️⃣ Kubernetes scheduler assigns pods to nodes in the cluster
+4️⃣ Kubernetes monitors pods
+Restarts failed pods automatically
+Adds/removes pods based on load (autoscaling)
+5️⃣ Networking & Service Discovery:
+Kubernetes provides internal networking so pods can talk to each other
+Services expose pods externally if needed
+6️⃣ Updates and Rollbacks:
+Kubernetes can update pods gradually (rolling updates)
+Rollback if something goes wrong
+
+          ┌───────────────────┐
+          │    Kubernetes     │
+          │      Cluster      │
+          └─────────┬─────────┘
+                    │
+         ┌──────────┴──────────┐
+         │                     │
+       Node 1                 Node 2
+  ┌─────────────┐        ┌─────────────┐
+  │ Pod (App)   │        │ Pod (App)   │
+  │ Container   │        │ Container   │
+  └─────────────┘        └─────────────┘
+                    │
+               Service / Ingress
+                    │
+                Internet
+
+
+Kubernetes is not a replacement for Docker.
+It is a higher-level orchestration layer that usually works with Docker containers.
+
+Docker = engine that runs your car
+Kubernetes = traffic system + highway + garage + fueling system that manages many cars
+
+
+Kubernetes (K8s) is not a single server.
+It’s a platform to manage containers across many servers.
+Those servers (physical or virtual) are called nodes.
+The group of nodes is called a cluster.
+
+
+Docker = “runs containers on 1 server”
+Kubernetes = “runs containers on many servers, manages scaling, restarts, networking”
+
+
+
+How Kubernetes Helps With Docker Containers?
+
+You already have:
+- Django app → containerized with Docker
+- PostgreSQL → containerized
+- Redis (optional) → containerized
+
+Without Kubernetes:
+- You run `docker run` or `docker-compose up`
+- Works on one server, but scaling and failover are manual
+
+With Kubernetes:
+- You write a Deployment for Django
+- Write a StatefulSet/Deployment for PostgreSQL
+- Write Service objects for networking
+
+Kubernetes ensures:
+- Correct number of Django pods running (replicas)
+- Automatic restart if any pod crashes
+- Load balancing traffic to multiple pods
+- Scaling up/down based on CPU/memory
+
+
+components of kubernetes:
+| Component  | What it is                                         |
+| ---------- | -------------------------------------------------- |
+| Cluster    | The whole Kubernetes environment (many servers)    |
+| Node       | A server in the cluster                            |
+| Pod        | Smallest deployable unit (1+ containers)           |
+| Deployment | Desired state of pods (how many replicas, updates) |
+| Service    | Exposes pods to each other or the outside world    |
