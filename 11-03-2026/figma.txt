@@ -1,0 +1,4 @@
+in figma i have made design for contact page on 10th march and now today i will make for support page
+
+i have also explored analytics things, for that i can use google analytics 4, PostHog
+in which i like posthog bcz it gives me that type of data source which is further i can use in grafana
