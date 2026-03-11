@@ -1,0 +1,11 @@
+today i have made dashboard fro emails
+
+
+for unsubscribed emails and for bounce mail i have made dashboard.
+
+
+for bounce mail i ahve used clearout API
+
+i have implemented that in dzn-mail server and then testing through CRM server and solved all the problem faced while testing
+
+now today i will work on analytical part

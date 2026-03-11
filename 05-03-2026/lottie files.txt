@@ -1,0 +1,3 @@
+i have learned what is lottie file
+
+i have to make a animation in which clearity must be proper, so i am trying out on figma but i can't do then someone suggest me to use lottie file, so i have generate a lottie json file and then use it in lottie website to create anmation.

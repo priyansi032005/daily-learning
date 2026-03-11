@@ -1,0 +1,25 @@
+AMD Developer Cloud is a cloud platform from Advanced Micro Devices (AMD) that lets developers access powerful AMD GPUs in the cloud to run AI, machine learning, and high-performance computing workloads without owning expensive hardware.
+
+
+What AMD Developer Cloud is ......
+
+It’s basically like AWS or Google Cloud, but focused on AMD GPU hardware for developers.
+Developers can remotely use AMD Instinct GPUs (like MI300X) to:
+
+Train AI models
+Run machine learning experiments
+Test GPU-accelerated applications
+Do high-performance computing (HPC)
+Build open-source GPU software
+
+All of this runs in the cloud instead of your local machine.
+-----------------------------------------------------------
+Instead of buying a GPU like:
+
+NVIDIA A100
+AMD MI300X
+
+you can just do:
+
+login → launch GPU VM → run your AI code
+in the browser.
