@@ -1,0 +1,1 @@
+i have worked with verum backend, solved bugs that i have to fixed and then i have tested in staging portal.
